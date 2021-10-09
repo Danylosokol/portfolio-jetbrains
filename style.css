@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Playfair Display', serif;
+    scroll-padding-top: 3.25rem;
 }
 
 body{
@@ -19,14 +20,16 @@ nav{
     height: 3.25rem;
     background-color: #1E1011;
     position: fixed;
+    z-index: 2;
 }
 
 ul{
     list-style-type: none;
+    float: right;
 }
 
 li{
-    float: right;
+    float: left;
 }
 
 li a{
@@ -34,9 +37,14 @@ li a{
     text-decoration: none;
     padding: 1rem;
     text-align: center;
-    color: #D2CFCE;
+    color: #CAD3D5;
     font-size: 1.25rem;
     line-height: 1.25rem;
+}
+
+li a:hover{
+    background-color: #CAD3D5;
+    color: #1E1011;
 }
 
 svg, img{
@@ -60,20 +68,40 @@ header h1{
 }
 
 #about{
-    height: calc(100vh - 3.25rem);
+    height: calc(100vh - 3.25rem - 15vh);
     width: 100vw;
     background-color: #CBD1D2;
+    font-size: 1.25rem;
+    padding-top: 15vh;
 }
 
 #jane{
-    height: 30vh;
-    width: auto;
-    left: 50px;
-    top: 110vh;
+    height: 35vh;
+    width: 35vh;
+    object-fit: cover;
+    left: 18vw;
+    top: 130vh;
     position: absolute;
+    z-index: 1;
 }
 
 #computer{
-    height: 30vh;
-    width: auto;
+    height: 40vh;
+    width: 40vh;
+    object-fit: cover;
+    object-position: 80% 0;
+    margin: 0 10vw 0 10vw;
+    float: left;
+}
+
+section[id=about] h2{
+    position: relative;
+    display: block;
+    margin: 0 20rem 2rem 2rem;
+}
+
+section[id=about] p{
+    display: block;
+    position: relative;
+    margin: 1rem 20rem 1rem 2rem;
 }
