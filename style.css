@@ -48,11 +48,6 @@ li a:hover{
     color: #1E1011;
 }
 
-.active{
-    color: #1E1011;
-    background-color: #CAD3D5;
-}
-
 #headerBackground{
     margin: 3.25rem 0 0 0;
     height: calc(100vh - 3.25rem);
