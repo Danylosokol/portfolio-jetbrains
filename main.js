@@ -1,11 +1,21 @@
-let openWindow = document.querySelector(".open-window");
-let popupWindow = document.querySelector(".window");
-let close = document.querySelector(".close");
+let openWindow = document.querySelectorAll(".open-window");
+let popupWindow = document.querySelectorAll(".window");
+let close = document.querySelectorAll(".close");
 
-openWindow.onclick = function(){
-    popupWindow.style.display = "block";
-}
 
-close.onclick = function(){
-    popupWindow.style.display = "none";
+for(let i = 0; i < openWindow.length; i++) {
+    openWindow[i].onclick = function() {
+        requestAnimationFrame(()=>{
+            popupWindow[i].style.transition = 'display ${5s}';
+            popupWindow[i].style.display = "block";
+        },0);
+    }
+    close[i].onclick = function () {
+        popupWindow[i].style.display = "none";
+    }
+    popupWindow[i].onclick = function(e){
+        if(e.target === popupWindow[i]){
+            popupWindow[i].style.display = "none";
+        }
+    }
 }
