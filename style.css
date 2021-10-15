@@ -43,14 +43,37 @@ li a{
     line-height: 1.25rem;
 }
 
-.hamburgerIcon{
-    background-color: #D2CFCE;
-    color: #1E1011;
+.hamburgerIcon i{
+    display: none;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    right: .5rem;
+    top: .5rem;
+    position: absolute;
 }
 
-@media screen and (max-width: 1440px){
-    li a{
+@media screen and (max-width: 899px){
+    .hamburgerIcon i{
+        display: block;
+    }
+    .hamburger{
         display: none;
+        margin-top: 3.25rem;
+        height: 13rem;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+    }
+    li{
+        clear: left;
+        display: block;
+        width: 100vw;
+    }
+    li a{
+        text-align: center;
+    }
+    ul{
+        clear: right;
     }
 }
 
