@@ -1,32 +1,32 @@
 *{
+    font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display', serif;
     scroll-padding-top: 3.25rem;
 }
 
 body{
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 header{
+    background-color: #D2CFCE;
     color: #D2CFCE;
     overflow: hidden;
-    background-color: #D2CFCE;
 }
 
 nav{
-    width: 100vw;
-    height: 3.25rem;
     background-color: #1E1011;
+    height: 3.25rem;
     position: fixed;
+    width: 100vw;
     z-index: 2;
 }
 
 ul{
-    list-style-type: none;
     float: right;
+    list-style-type: none;
 }
 
 li{
@@ -34,35 +34,45 @@ li{
 }
 
 li a{
-    display: block;
-    text-decoration: none;
-    padding: 1rem;
-    text-align: center;
     color: #CAD3D5;
+    display: block;
     font-size: 1.25rem;
     line-height: 1.25rem;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
 }
 
 .hamburgerIcon i{
     display: none;
     font-size: 1.75rem;
     line-height: 1.75rem;
+    position: absolute;
     right: .5rem;
     top: .5rem;
-    position: absolute;
 }
 
-@media screen and (max-width: 899px){
+.hamburger{
+    display: none;
+}
+
+.mainBar{
+    display: inline-block;
+}
+
+@media screen and (max-width: 880px){
+    .mainBar{
+        display: none;
+    }
     .hamburgerIcon i{
         display: block;
     }
     .hamburger{
-        display: none;
-        margin-top: 3.25rem;
-        height: 13rem;
         background-color: black;
-        width: 100%;
+        height: 13rem;
+        margin-top: 3.25rem;
         text-align: center;
+        width: 100%;
     }
     li{
         clear: left;
@@ -83,12 +93,12 @@ li a:hover{
 }
 
 #headerBackground{
-    margin: 3.25rem 0 0 0;
-    height: calc(100vh - 3.25rem);
-    width: 100vw;
     background-image: url('images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: calc(100vh - 3.25rem);
+    margin: 3.25rem 0 0 0;
+    width: 100vw;
 }
 
 header h1{
@@ -102,42 +112,42 @@ section{
 }
 
 #about{
-    height: calc(100vh - 3.25rem - 20vh);
-    width: 100vw;
     background-color: #CBD1D2;
     font-size: 1.25rem;
+    height: calc(100vh - 3.25rem - 20vh);
     padding-top: 20vh;
+    width: 100vw;
 }
 
 #jane{
     height: 35vh;
-    width: 35vh;
-    object-fit: cover;
     left: 23vw;
-    top: 135vh;
+    object-fit: cover;
     position: absolute;
+    top: 135vh;
+    width: 35vh;
     z-index: 1;
 }
 
 #computer{
+    float: left;
     height: 40vh;
-    width: 40vh;
+    margin: 0 15vw 25vh 15vw;
     object-fit: cover;
     object-position: 80% 0;
-    margin: 0 15vw 25vh 15vw;
-    float: left;
+    width: 40vh;
 }
 
 #about h2{
-    position: relative;
     display: block;
     margin: 0 20rem 2rem 2rem;
+    position: relative;
 }
 
 #about p{
     display: block;
-    position: relative;
     margin: 1rem 20rem 1rem 2rem;
+    position: relative;
 }
 
 @media screen and (max-width: 1185px){
@@ -148,27 +158,27 @@ section{
 
 @media screen and (max-width: 950px){
     #about p, #about h2{
-        margin-right: 3rem;
         font-size: 1rem;
+        margin-right: 3rem;
     }
     #computer{
         height: 30vh;
-        width: 30vh;
         margin: 0 10vw 40vh 10vw;
+        width: 30vh;
     }
     #jane{
         height: 25vh;
-        width: 25vh;
         left: 20vw;
         top: 130vh;
+        width: 25vh;
     }
 }
 
 #portfolio{
-    height: calc(100vh - 3.25rem);
-    width: 100vw;
     background-color: #F2F5F8;
+    height: calc(100vh - 3.25rem);
     text-align: center;
+    width: 100vw;
 }
 
 @media screen and (max-width: 738px){
@@ -187,23 +197,23 @@ section{
 
 .flexContainer{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #portfolio img{
-    height: 50vh;
-    width: 50vh;
-    object-fit: cover;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: 1s;
     border-radius: 15px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    height: 50vh;
+    object-fit: cover;
+    transition: 1s;
+    width: 50vh;
 }
 
 #portfolio img:hover{
-    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
 }
 
 figcaption{
@@ -212,8 +222,8 @@ figcaption{
 }
 
 .firstPicture{
-    object-position: 50% 50%;
     margin-right: 2rem;
+    object-position: 50% 50%;
 }
 
 .secondPicture{
@@ -221,16 +231,16 @@ figcaption{
 }
 
 #contacts{
-    height: calc(100vh - 9.27rem);
-    width: 100vw;
     background-color: #FFFFFF;
+    height: calc(100vh - 9.27rem);
     text-align: center;
+    width: 100vw;
 }
 
 #contacts h2{
     display: inline-block;
-    margin: 8rem 0 1rem 0;
     font-size: 3rem;
+    margin: 8rem 0 1rem 0;
 }
 
 #contacts p{
@@ -239,15 +249,15 @@ figcaption{
 }
 
 #contacts a, .window a{
-    text-decoration: none;
     color: #696969;
+    text-decoration: none;
 }
 
 svg{
-    width: 30px;
+    fill: #696969;
     height: auto;
     margin-right: 1rem;
-    fill: #696969;
+    width: 30px;
 }
 
 svg:hover, #contacts a:hover, .window a:hover{
@@ -256,25 +266,25 @@ svg:hover, #contacts a:hover, .window a:hover{
 }
 
 footer{
-    height: 5.5rem;
-    width: 100vw;
     background-color: #1E1011;
-    text-align: center;
     color: #D2CFCE;
+    height: 5.5rem;
     padding-top: 1rem;
+    text-align: center;
+    width: 100vw;
 }
 
 .window{
+    background-color: rgba(0, 0, 0, .6);
     display: none;
+    height: 100%;
+    left: 0;
+    padding-top: 100px;
     position: fixed;
     top: 0;
-    left: 0;
-    z-index: 1;
-    padding-top: 100px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .6);
     transition: all 1s;
+    width: 100%;
+    z-index: 1;
 }
 
 .information{
@@ -282,9 +292,9 @@ footer{
     border: solid #1E1011 .2rem;
     border-radius: 15px;
     margin: 0 auto 0 auto;
-    width: 50vw;
-    text-align: center;
     padding-bottom: 1rem;
+    text-align: center;
+    width: 50vw;
 }
 
 .information p, .information h1{
@@ -292,18 +302,18 @@ footer{
 }
 
 .flexContainer button{
-    font-size: 1rem;
-    padding: .1rem .5rem;
-    border-radius: 15px;
-    border: solid .1rem #1E1011;
-    color: #1E1011;
     background-color: #D2CFCE;
-    transition: 1s;
+    border: solid .1rem #1E1011;
+    border-radius: 15px;
+    color: #1E1011;
+    font-size: 1rem;
     margin-bottom:2rem;
+    padding: .1rem .5rem;
+    transition: 1s;
 }
 
 .flexContainer button:hover{
-    color: #D2CFCE;
     background-color: #1E1011;
+    color: #D2CFCE;
 }
 

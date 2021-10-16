@@ -16,12 +16,23 @@ for(let i = 0; i < openWindow.length; i++) {
     }
 }
 
+let mainBar = document.querySelector(".mainBar");
+
+window.addEventListener('resize', function(){
+    if(window.innerWidth <= 880){
+        mainBar.style.display = 'none';
+    }
+    else if(window.innerWidth > 880){
+        mainBar.style.display = 'inline-block';
+    }
+});
+
 let menuButton = document.querySelector("a i[class='fa fa-bars']");
 
 menuButton.onclick = function(){
     let menu = document.querySelector(".hamburger");
     let background = document.getElementById("headerBackground");
-    if(menu.style.display === 'none' && window.innerWidth <= 899){
+    if(menu.style.display === 'none' && window.innerWidth <= 880){
         menu.style.display = 'block';
         background.style.marginTop = '16.25rem';
         background.style.height = 'calc(100vh - 16.25rem)';
