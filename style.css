@@ -1,22 +1,22 @@
-*{
+* {
     font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
     scroll-padding-top: 3.25rem;
 }
 
-body{
+body {
     height: 100%;
     width: 100%;
 }
 
-header{
+header {
     background-color: #D2CFCE;
     color: #D2CFCE;
     overflow: hidden;
 }
 
-nav{
+nav {
     background-color: #1E1011;
     height: 3.25rem;
     position: fixed;
@@ -24,16 +24,16 @@ nav{
     z-index: 2;
 }
 
-ul{
+ul {
     float: right;
     list-style-type: none;
 }
 
-li{
+li {
     float: left;
 }
 
-li a{
+li a {
     color: #CAD3D5;
     display: block;
     font-size: 1.25rem;
@@ -43,7 +43,7 @@ li a{
     text-decoration: none;
 }
 
-.hamburgerIcon i{
+.hamburgerIcon i {
     display: none;
     font-size: 1.75rem;
     line-height: 1.75rem;
@@ -52,47 +52,52 @@ li a{
     top: .5rem;
 }
 
-.hamburger{
+.hamburger {
     display: none;
 }
 
-.mainBar{
+.mainBar {
     display: inline-block;
 }
 
-@media screen and (max-width: 880px){
-    .mainBar{
+@media screen and (max-width: 880px) {
+    .mainBar {
         display: none;
     }
-    .hamburgerIcon i{
+
+    .hamburgerIcon i {
         display: block;
     }
-    .hamburger{
+
+    .hamburger {
         background-color: black;
         height: 13rem;
         margin-top: 3.25rem;
         text-align: center;
         width: 100%;
     }
-    li{
+
+    li {
         clear: left;
         display: block;
         width: 100vw;
     }
-    li a{
+
+    li a {
         text-align: center;
     }
-    ul{
+
+    ul {
         clear: right;
     }
 }
 
-li a:hover{
+li a:hover {
     background-color: #CAD3D5;
     color: #1E1011;
 }
 
-#headerBackground{
+#headerBackground {
     background-image: url('images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,17 +106,17 @@ li a:hover{
     width: 100vw;
 }
 
-header h1{
+header h1 {
     display: inline-block;
     font-size: 3rem;
     margin: 25% 50% 0 5%;
 }
 
-section{
+section {
     font-size: 1.25rem;
 }
 
-#about{
+#about {
     background-color: #CBD1D2;
     font-size: 1.25rem;
     height: calc(100vh - 3.25rem - 20vh);
@@ -119,7 +124,7 @@ section{
     width: 100vw;
 }
 
-#jane{
+#jane {
     height: 35vh;
     left: 23vw;
     object-fit: cover;
@@ -129,7 +134,7 @@ section{
     z-index: 1;
 }
 
-#computer{
+#computer {
     float: left;
     height: 40vh;
     margin: 0 15vw 25vh 15vw;
@@ -138,35 +143,37 @@ section{
     width: 40vh;
 }
 
-#about h2{
+#about h2 {
     display: block;
     margin: 0 20rem 2rem 2rem;
     position: relative;
 }
 
-#about p{
+#about p {
     display: block;
     margin: 1rem 20rem 1rem 2rem;
     position: relative;
 }
 
-@media screen and (max-width: 1185px){
-    #about p, #about h2{
+@media screen and (max-width: 1185px) {
+    #about p, #about h2 {
         margin-right: 10rem;
     }
 }
 
-@media screen and (max-width: 950px){
-    #about p, #about h2{
+@media screen and (max-width: 950px) {
+    #about p, #about h2 {
         font-size: 1rem;
         margin-right: 3rem;
     }
-    #computer{
+
+    #computer {
         height: 30vh;
         margin: 0 10vw 40vh 10vw;
         width: 30vh;
     }
-    #jane{
+
+    #jane {
         height: 25vh;
         left: 20vw;
         top: 130vh;
@@ -174,34 +181,35 @@ section{
     }
 }
 
-#portfolio{
+#portfolio {
     background-color: #F2F5F8;
     height: calc(100vh - 3.25rem);
     text-align: center;
     width: 100vw;
 }
 
-@media screen and (max-width: 738px){
-    #portfolio{
+@media screen and (max-width: 738px) {
+    #portfolio {
         height: 100%;
     }
-    #portfolio h2{
+
+    #portfolio h2 {
         font-size: 2.2rem;
     }
 }
 
-#portfolio h2{
+#portfolio h2 {
     display: inline-block;
     margin: 2rem 0;
 }
 
-.flexContainer{
+.flexContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#portfolio img{
+#portfolio img {
     border-radius: 15px;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
@@ -211,61 +219,61 @@ section{
     width: 50vh;
 }
 
-#portfolio img:hover{
+#portfolio img:hover {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
 }
 
-figcaption{
+figcaption {
     color: #1E1011;
     font-size: .9rem;
 }
 
-.firstPicture{
+.firstPicture {
     margin-right: 2rem;
     object-position: 50% 50%;
 }
 
-.secondPicture{
+.secondPicture {
     object-position: 40% 50%;
 }
 
-#contacts{
+#contacts {
     background-color: #FFFFFF;
     height: calc(100vh - 9.27rem);
     text-align: center;
     width: 100vw;
 }
 
-#contacts h2{
+#contacts h2 {
     display: inline-block;
     font-size: 3rem;
     margin: 8rem 0 1rem 0;
 }
 
-#contacts p{
+#contacts p {
     display: block;
     margin: 1.5rem 0;
 }
 
-#contacts a, .window a{
+#contacts a, .window a {
     color: #696969;
     text-decoration: none;
 }
 
-svg{
+svg {
     fill: #696969;
     height: auto;
     margin-right: 1rem;
     width: 30px;
 }
 
-svg:hover, #contacts a:hover, .window a:hover{
+svg:hover, #contacts a:hover, .window a:hover {
     color: #A9A9A9;
     fill: #A9A9A9;
 }
 
-footer{
+footer {
     background-color: #1E1011;
     color: #D2CFCE;
     height: 5.5rem;
@@ -274,7 +282,7 @@ footer{
     width: 100vw;
 }
 
-.window{
+.window {
     background-color: rgba(0, 0, 0, .6);
     display: none;
     height: 100%;
@@ -287,7 +295,7 @@ footer{
     z-index: 1;
 }
 
-.information{
+.information {
     background-color: #D2CFCE;
     border: solid #1E1011 .2rem;
     border-radius: 15px;
@@ -297,22 +305,22 @@ footer{
     width: 50vw;
 }
 
-.information p, .information h1{
+.information p, .information h1 {
     margin: 1rem;
 }
 
-.flexContainer button{
+.flexContainer button {
     background-color: #D2CFCE;
     border: solid .1rem #1E1011;
     border-radius: 15px;
     color: #1E1011;
     font-size: 1rem;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
     padding: .1rem .5rem;
     transition: 1s;
 }
 
-.flexContainer button:hover{
+.flexContainer button:hover {
     background-color: #1E1011;
     color: #D2CFCE;
 }
